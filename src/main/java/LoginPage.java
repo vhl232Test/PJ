@@ -14,7 +14,7 @@ public class LoginPage {
     @FindBy(xpath = "//button[@class='radius']")
     WebElement loginButton;
     @FindBy(id = "flash")
-    WebElement errorMassege;
+    WebElement messageAboutLogged;
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
