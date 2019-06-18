@@ -59,7 +59,7 @@ public class TestForPJ {
             File file = takesScreenshot.getScreenshotAs(OutputType.FILE);
             //file's destination and set name file
             date = LocalDateTime.now();
-            dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH.mm.ss");
+            dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy.MM.dd  HH-mm-ss");
             String pathFile = "./target/screenshots/" + dateTimeFormatter.format(date) +".png";// + file.getName();
             try {
                 //Copy file at destination
@@ -75,8 +75,8 @@ public class TestForPJ {
 
     }
 
-    @AfterClass
+    /*@AfterClass
     public void closeBrowser(){
         driver.quit();
-    }
+    }*/
 }
