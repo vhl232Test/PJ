@@ -75,8 +75,8 @@ public class TestForPJ {
 
     }
 
-    /*@AfterClass
+    @AfterClass
     public void closeBrowser(){
         driver.quit();
-    }*/
+    }
 }
